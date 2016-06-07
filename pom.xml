@@ -36,7 +36,7 @@
   </scm>
   <properties>
     <jenkins.version>1.580.3</jenkins.version>
-    <maven-hpi-plugin.disabledTestInjection>true</maven-hpi-plugin.disabledTestInjection>
+    <jenkins-test-harness.version>2.9-SNAPSHOT</jenkins-test-harness.version>
     <java.level>6</java.level>
   </properties>
   <repositories>
