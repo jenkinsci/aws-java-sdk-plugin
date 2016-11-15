@@ -9,7 +9,7 @@
     <relativePath />
   </parent>
   <artifactId>aws-java-sdk</artifactId>
-  <version>1.11.38-SNAPSHOT</version>
+  <version>1.11.54-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
   <name>Amazon Web Services SDK</name>
@@ -55,7 +55,7 @@
     <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-java-sdk</artifactId>
-      <version>1.11.37</version>
+      <version>1.11.54</version>
       <exclusions>
         <exclusion>
           <!-- Included in core -->
