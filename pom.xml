@@ -9,7 +9,7 @@
     <relativePath />
   </parent>
   <artifactId>aws-java-sdk</artifactId>
-  <version>1.11.342-SNAPSHOT</version>
+  <version>${revision}${changelist}</version>
   <packaging>hpi</packaging>
 
   <name>Amazon Web Services SDK</name>
