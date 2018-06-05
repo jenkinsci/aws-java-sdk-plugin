@@ -4,6 +4,9 @@ CHANGELOG
 See [full changelog](https://github.com/aws/aws-sdk-java/blob/master/CHANGELOG.md) from the library (use the first 3 digits).
 Below are listed changes others than the library itself.
 
+1.11.341
+--------
+
 1.11.329
 -----
 * Incrementalified the plugin ([#17](https://github.com/jenkinsci/aws-java-sdk-plugin/pull/17))
