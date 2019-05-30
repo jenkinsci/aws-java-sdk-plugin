@@ -4,6 +4,10 @@ CHANGELOG
 See [full changelog](https://github.com/aws/aws-sdk-java/blob/master/CHANGELOG.md) from the library (use the first 3 digits).
 Below are listed changes others than the library itself.
 
+1.11.562
+--------
+* [aws-java-sdk changelog](https://github.com/aws/aws-sdk-java/blob/master/CHANGELOG.md#111562-2019-05-29)
+
 1.11.457
 --------
 * [aws-java-sdk changelog](https://github.com/aws/aws-sdk-java/blob/master/CHANGELOG.md#111457-2018-11-27)
