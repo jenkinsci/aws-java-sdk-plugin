@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-1.11.563 and newer
+1.11.594 and newer
 ------
 
 No longer tracked in this file. See [GitHub releases](https://github.com/jenkinsci/aws-java-sdk-plugin/releases) instead.
