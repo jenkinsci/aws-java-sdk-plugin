@@ -1,0 +1,3 @@
+_extends: .github
+tag-template: aws-java-sdk-$NEXT_PATCH_VERSION
+version-template: $MAJOR.$MINOR.$PATCH
