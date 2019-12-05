@@ -14,7 +14,7 @@
 
   <name>Amazon Web Services SDK</name>
   <description>This plugin provides AWS SDK for Java for other plugins.</description>
-  <url>https://wiki.jenkins.io/display/JENKINS/Amazon+Web+Services+SDK+library</url>
+  <url>https://github.com/jenkinsci/aws-java-sdk-plugin</url>
   <licenses>
     <license>
       <name>MIT License</name>
