@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>3.51</version>
+    <version>3.55</version>
     <relativePath />
   </parent>
   <artifactId>aws-java-sdk</artifactId>
@@ -14,7 +14,7 @@
 
   <name>Amazon Web Services SDK</name>
   <description>This plugin provides AWS SDK for Java for other plugins.</description>
-  <url>https://wiki.jenkins.io/display/JENKINS/Amazon+Web+Services+SDK+library</url>
+  <url>https://github.com/jenkinsci/aws-java-sdk-plugin</url>
   <licenses>
     <license>
       <name>MIT License</name>
@@ -35,7 +35,7 @@
     <tag>${scmTag}</tag>
   </scm>
   <properties>
-    <revision>1.11.671</revision>
+    <revision>1.11.700</revision>
     <changelist>-SNAPSHOT</changelist>
     <jenkins.version>2.138.4</jenkins.version>
     <java.level>8</java.level>
