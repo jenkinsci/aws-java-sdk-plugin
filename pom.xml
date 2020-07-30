@@ -77,6 +77,11 @@
           <groupId>org.apache.httpcomponents</groupId>
           <artifactId>httpclient</artifactId>
         </exclusion>
+        <!-- unnecessary and potentially vulnerable components -->
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-kinesisvideo</artifactId>
+        </exclusion>
       </exclusions>
     </dependency>
     <dependency>
