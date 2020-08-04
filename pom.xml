@@ -38,7 +38,7 @@
     <revision>1.11.822</revision>
     <changelist>-SNAPSHOT</changelist>
     <java.level>8</java.level>
-    <jackson.version>2.11.1</jackson.version>
+    <jackson.version>2.11.2</jackson.version>
   </properties>
   <repositories>
     <repository>
