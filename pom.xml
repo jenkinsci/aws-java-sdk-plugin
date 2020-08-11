@@ -39,6 +39,7 @@
     <changelist>-SNAPSHOT</changelist>
     <java.level>8</java.level>
     <jackson.version>2.11.2</jackson.version>
+    <jenkins.version>2.222.4</jenkins.version>
   </properties>
   <repositories>
     <repository>
