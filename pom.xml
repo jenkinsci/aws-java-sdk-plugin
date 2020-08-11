@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>4.3</version>
+    <version>4.6</version>
     <relativePath />
   </parent>
   <artifactId>aws-java-sdk</artifactId>
@@ -35,7 +35,7 @@
     <tag>${scmTag}</tag>
   </scm>
   <properties>
-    <revision>1.11.822</revision>
+    <revision>1.11.838</revision>
     <changelist>-SNAPSHOT</changelist>
     <java.level>8</java.level>
     <jackson.version>2.11.2</jackson.version>
