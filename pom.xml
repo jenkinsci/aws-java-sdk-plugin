@@ -9,7 +9,7 @@
     <relativePath />
   </parent>
   <artifactId>aws-java-sdk</artifactId>
-  <version>1.11.854</version>
+  <version>${revision}${changelist}</version>
   <packaging>hpi</packaging>
 
   <name>Amazon Web Services SDK</name>
@@ -32,10 +32,10 @@
     <connection>scm:git:git://github.com/jenkinsci/aws-java-sdk-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/aws-java-sdk-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/aws-java-sdk-plugin</url>
-    <tag>aws-java-sdk-1.11.854</tag>
+    <tag>${scmTag}</tag>
   </scm>
   <properties>
-    <revision>1.11.854</revision>
+    <revision>1.11.855</revision>
     <changelist>-SNAPSHOT</changelist>
     <java.level>8</java.level>
     <jackson.version>2.11.2</jackson.version>
