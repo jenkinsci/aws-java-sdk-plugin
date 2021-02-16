@@ -35,12 +35,11 @@
     <tag>${scmTag}</tag>
   </scm>
   <properties>
-    <revision>1.11.931</revision>
+    <revision>1.11.955</revision>
     <changelist>-SNAPSHOT</changelist>
     <java.level>8</java.level>
     <jackson.version>2.11.3</jackson.version>
     <jenkins.version>2.222.4</jenkins.version>
-    <netty.version>4.1.56.Final</netty.version>
   </properties>
   <repositories>
     <repository>
@@ -98,16 +97,6 @@
         <groupId>com.fasterxml.jackson.dataformat</groupId>
         <artifactId>jackson-dataformat-cbor</artifactId>
         <version>${jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.netty</groupId>
-        <artifactId>netty-codec-http</artifactId>
-        <version>${netty.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.netty</groupId>
-        <artifactId>netty-handler</artifactId>
-        <version>${netty.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
