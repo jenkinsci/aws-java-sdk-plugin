@@ -35,7 +35,7 @@
     <tag>${scmTag}</tag>
   </scm>
   <properties>
-    <revision>1.11.977</revision>
+    <revision>1.11.995</revision>
     <changelist>-SNAPSHOT</changelist>
     <java.level>8</java.level>
     <jackson.version>2.12.1</jackson.version>
