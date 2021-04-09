@@ -35,12 +35,11 @@
     <tag>${scmTag}</tag>
   </scm>
   <properties>
-    <revision>1.11.996</revision>
+    <revision>1.11.995</revision>
     <changelist>-SNAPSHOT</changelist>
     <java.level>8</java.level>
     <jackson.version>2.12.1</jackson.version>
     <jenkins.version>2.222.4</jenkins.version>
-    <netty.version>4.1.63.Final</netty.version>
   </properties>
   <repositories>
     <repository>
@@ -79,6 +78,23 @@
           <groupId>org.apache.httpcomponents</groupId>
           <artifactId>httpclient</artifactId>
         </exclusion>
+        <!-- Exclude kinesis because it pulls netty which needs to be regularly bumped due to security fixes -->
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-kinesis</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-kinesisvideo</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-kinesisanalyticsv2</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-kinesisvideosignalingchannels</artifactId>
+        </exclusion>
       </exclusions>
     </dependency>
     <dependency>
@@ -98,16 +114,6 @@
         <groupId>com.fasterxml.jackson.dataformat</groupId>
         <artifactId>jackson-dataformat-cbor</artifactId>
         <version>${jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.netty</groupId>
-        <artifactId>netty-codec-http</artifactId>
-        <version>${netty.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.netty</groupId>
-        <artifactId>netty-handler</artifactId>
-        <version>${netty.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
