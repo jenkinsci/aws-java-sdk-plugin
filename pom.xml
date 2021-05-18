@@ -40,7 +40,7 @@
     <java.level>8</java.level>
     <jackson.version>2.12.1</jackson.version>
     <jenkins.version>2.222.4</jenkins.version>
-    <netty.version>4.1.63.Final</netty.version>
+    <netty.version>4.1.64.Final</netty.version>
   </properties>
   <repositories>
     <repository>
