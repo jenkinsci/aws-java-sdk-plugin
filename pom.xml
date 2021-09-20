@@ -43,6 +43,7 @@
     <module>aws-java-sdk-elasticbeanstalk</module>
     <module>aws-java-sdk-kms</module>
     <module>aws-java-sdk-s3</module>
+    <module>aws-java-sdk-sts</module>
     <module>jmespath-java</module>
   </modules>
   <properties>
