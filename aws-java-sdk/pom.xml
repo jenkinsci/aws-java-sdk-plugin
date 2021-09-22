@@ -62,6 +62,11 @@
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-logs</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
       <artifactId>aws-java-sdk-s3</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -120,6 +125,10 @@
         <exclusion>
           <groupId>com.amazonaws</groupId>
           <artifactId>aws-java-sdk-kms</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-logs</artifactId>
         </exclusion>
         <exclusion>
           <groupId>com.amazonaws</groupId>
