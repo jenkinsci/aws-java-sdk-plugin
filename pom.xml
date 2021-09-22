@@ -46,6 +46,7 @@
     <module>aws-java-sdk-elasticbeanstalk</module>
     <module>aws-java-sdk-iam</module>
     <module>aws-java-sdk-kms</module>
+    <module>aws-java-sdk-logs</module>
     <module>aws-java-sdk-s3</module>
     <module>aws-java-sdk-ssm</module>
     <module>aws-java-sdk-sts</module>
