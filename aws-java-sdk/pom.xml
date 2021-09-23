@@ -12,7 +12,6 @@
   <packaging>hpi</packaging>
 
   <name>Amazon Web Services SDK :: All</name>
-  <description>This plugin provides AWS SDK for Java for other plugins.</description>
   <url>https://github.com/jenkinsci/aws-java-sdk-plugin</url>
   <dependencies>
     <dependency>

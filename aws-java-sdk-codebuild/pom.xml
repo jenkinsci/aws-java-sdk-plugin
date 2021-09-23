@@ -10,8 +10,7 @@
   <artifactId>aws-java-sdk-codebuild</artifactId>
   <packaging>hpi</packaging>
 
-  <name>Amazon Web Services SDK :: CodeBUild</name>
-  <description>This plugin provides AWS SDK for Java for other plugins.</description>
+  <name>Amazon Web Services SDK :: CodeBuild</name>
   <url>https://github.com/jenkinsci/aws-java-sdk-plugin</url>
   <dependencies>
     <dependency>
