@@ -25,13 +25,17 @@
       <exclusions>
         <exclusion>
           <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-core</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
           <artifactId>jmespath-java</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>jmespath-java</artifactId>
+      <artifactId>aws-java-sdk-jmespath</artifactId>
       <version>${project.version}</version>
     </dependency>
   </dependencies>

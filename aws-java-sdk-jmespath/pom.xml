@@ -7,7 +7,7 @@
     <artifactId>aws-java-sdk-parent</artifactId>
     <version>${revision}${changelist}</version>
   </parent>
-  <artifactId>jmespath-java</artifactId>
+  <artifactId>aws-java-sdk-jmespath</artifactId>
   <packaging>hpi</packaging>
 
   <name>Amazon Web Services SDK :: JMespath</name>

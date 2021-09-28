@@ -15,7 +15,7 @@ If you need to use an API that is not yet published as its own plugin, feel free
 * Create a new directory `aws-java-sdk-<name>`. The name should be identical to the aws sdk module.
 * Create `pom.xml`.
 ** Depend on `com.amazonaws:aws-java-sdk-<name>`. Exclude all transitive dependencies.
-** Transitive dependencies should be replaced by their equivalent plugin dependency. Most APIs only depend on `aws-java-sdk-core` and `jmespath-java`.
+** Transitive dependencies should be replaced by their equivalent plugin dependency. Most APIs only depend on `aws-java-sdk-core` and `jmespath-java` (called `aws-java-sdk-jmespath` in this project for clarity in the Jenkins ecosystem).
 * Create `src/main/resource/index.jelly`. Look at existing modules and adapt it.
 * Add the module to the root `pom.xml`.
 * Add the plugin dependency to `aws-java-sdk` and exclude the module from transitive dependencies.

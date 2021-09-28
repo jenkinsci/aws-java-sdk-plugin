@@ -50,7 +50,7 @@
     <module>aws-java-sdk-s3</module>
     <module>aws-java-sdk-ssm</module>
     <module>aws-java-sdk-sts</module>
-    <module>jmespath-java</module>
+    <module>aws-java-sdk-jmespath</module>
   </modules>
   <properties>
     <revision>1.12.69</revision>
