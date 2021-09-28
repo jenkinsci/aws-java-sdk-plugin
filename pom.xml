@@ -53,7 +53,7 @@
     <module>aws-java-sdk-jmespath</module>
   </modules>
   <properties>
-    <revision>1.12.70</revision>
+    <revision>1.12.75</revision>
     <changelist>-SNAPSHOT</changelist>
     <java.level>8</java.level>
     <jackson.version>2.12.4</jackson.version>
