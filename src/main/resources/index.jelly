@@ -1,4 +1,0 @@
-<?jelly escape-by-default='true'?>
-<div>
-  This plugin provides <a href="https://aws.amazon.com/sdk-for-java/">AWS SDK for Java</a> for other plugins.
-</div>

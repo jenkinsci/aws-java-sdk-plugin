@@ -8,11 +8,12 @@
     <version>4.27</version>
     <relativePath />
   </parent>
-  <artifactId>aws-java-sdk</artifactId>
+  <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+  <artifactId>aws-java-sdk-parent</artifactId>
   <version>${revision}${changelist}</version>
-  <packaging>hpi</packaging>
+  <packaging>pom</packaging>
 
-  <name>Amazon Web Services SDK</name>
+  <name>Amazon Web Services SDK :: Parent</name>
   <description>This plugin provides AWS SDK for Java for other plugins.</description>
   <url>https://github.com/jenkinsci/aws-java-sdk-plugin</url>
   <licenses>
@@ -34,6 +35,23 @@
     <url>https://github.com/jenkinsci/aws-java-sdk-plugin</url>
     <tag>${scmTag}</tag>
   </scm>
+  <modules>
+    <module>aws-java-sdk</module>
+    <module>aws-java-sdk-cloudformation</module>
+    <module>aws-java-sdk-codebuild</module>
+    <module>aws-java-sdk-core</module>
+    <module>aws-java-sdk-ec2</module>
+    <module>aws-java-sdk-ecr</module>
+    <module>aws-java-sdk-ecs</module>
+    <module>aws-java-sdk-elasticbeanstalk</module>
+    <module>aws-java-sdk-iam</module>
+    <module>aws-java-sdk-kms</module>
+    <module>aws-java-sdk-logs</module>
+    <module>aws-java-sdk-s3</module>
+    <module>aws-java-sdk-ssm</module>
+    <module>aws-java-sdk-sts</module>
+    <module>aws-java-sdk-jmespath</module>
+  </modules>
   <properties>
     <revision>1.12.69</revision>
     <changelist>-SNAPSHOT</changelist>
@@ -53,46 +71,51 @@
       <url>https://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
-  <dependencies>
-    <dependency>
-      <groupId>com.amazonaws</groupId>
-      <artifactId>aws-java-sdk</artifactId>
-      <version>${revision}</version>
-      <exclusions>
-        <exclusion>
-          <!-- Included in core -->
-          <groupId>commons-codec</groupId>
-          <artifactId>commons-codec</artifactId>
-        </exclusion>
-        <!-- use the version supplied by jackson2-api -->
-        <exclusion>
-          <groupId>com.fasterxml.jackson.core</groupId>
-          <artifactId>jackson-databind</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>com.fasterxml.jackson.core</groupId>
-          <artifactId>jackson-core</artifactId>
-        </exclusion>
-        <!-- use the version supplied by apache-httpcomponents-client-4-api -->
-        <exclusion>
-          <groupId>org.apache.httpcomponents</groupId>
-          <artifactId>httpclient</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins</groupId>
-      <artifactId>jackson2-api</artifactId>
-      <version>${jackson.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins</groupId>
-      <artifactId>apache-httpcomponents-client-4-api</artifactId>
-      <version>4.5.13-1.0</version>
-    </dependency>
-  </dependencies>
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-bom</artifactId>
+        <version>${revision}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk</artifactId>
+        <version>${revision}</version>
+        <exclusions>
+          <exclusion>
+            <!-- Included in core -->
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+          </exclusion>
+          <!-- use the version supplied by jackson2-api -->
+          <exclusion>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+          </exclusion>
+          <!-- use the version supplied by apache-httpcomponents-client-4-api -->
+          <exclusion>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>jackson2-api</artifactId>
+        <version>${jackson.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>apache-httpcomponents-client-4-api</artifactId>
+        <version>4.5.13-1.0</version>
+      </dependency>
       <dependency>
         <groupId>com.fasterxml.jackson.dataformat</groupId>
         <artifactId>jackson-dataformat-cbor</artifactId>
