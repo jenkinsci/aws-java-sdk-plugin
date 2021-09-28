@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
     <artifactId>aws-java-sdk-parent</artifactId>
-    <version>1.12.69</version>
+    <version>${revision}${changelist}</version>
   </parent>
   <artifactId>aws-java-sdk-logs</artifactId>
   <packaging>hpi</packaging>
