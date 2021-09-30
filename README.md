@@ -8,6 +8,23 @@ This plugin provides the [AWS SDK for Java](https://aws.amazon.com/sdk-for-java/
 
 Commonly used modules have their own plugins, less used modules are in the `aws-java-sdk` plugin.
 
+## Plugins
+### aws-java-sdk-minimal
+This plugins contains multiple modules.
+These have been grouped together as `aws-java-sdk-core` needs some classes in the same classpath and the structured classloaders in Jenkins don't permit having them in different plugins. 
+
+* aws-java-sdk-core
+* aws-java-sdk-kms
+* aws-java-sdk-s3
+* aws-java-sdk-sts
+* jmespath-java
+
+### aws-java-sdk-*
+Contains an individual AWS Java SDK module with the same name.
+
+### aws-java-sdk
+Contains all AWS Java SDK modules not already provided through a separate plugin. It depends on all other aws-java-sdk plugins and is very heavyweight.
+
 ## Adding a new plugin
 
 If you need to use an API that is not yet published as its own plugin, feel free to submit a pull request to create a plugin for it. This will avoid pulling the all-in-one `aws-java-sdk` plugin.

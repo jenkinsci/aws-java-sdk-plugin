@@ -15,7 +15,7 @@
   <dependencies>
     <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>aws-java-sdk-core</artifactId>
+      <artifactId>aws-java-sdk-minimal</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -31,11 +31,6 @@
           <artifactId>jmespath-java</artifactId>
         </exclusion>
       </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>aws-java-sdk-jmespath</artifactId>
-      <version>${project.version}</version>
     </dependency>
   </dependencies>
 </project>
