@@ -1,4 +1,0 @@
-<?jelly escape-by-default='true'?>
-<div>
-  JMES Path Query library for the <a href="https://aws.amazon.com/sdk-for-java/">AWS SDK for Java</a>.
-</div>
