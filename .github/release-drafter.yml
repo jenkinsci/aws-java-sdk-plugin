@@ -1,4 +1,4 @@
 _extends: .github
 name-template: $NEXT_PATCH_VERSION
-tag-template: aws-java-sdk-$NEXT_PATCH_VERSION
+tag-template: aws-java-sdk-parent-$NEXT_PATCH_VERSION
 version-template: $MAJOR.$MINOR.$PATCH
