@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
     <artifactId>aws-java-sdk-parent</artifactId>
-    <version>${revision}${changelist}</version>
+    <version>${revision}-${changelist}</version>
   </parent>
   <artifactId>aws-java-sdk-minimal</artifactId>
   <packaging>hpi</packaging>

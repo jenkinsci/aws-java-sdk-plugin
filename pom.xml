@@ -10,7 +10,7 @@
   </parent>
   <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
   <artifactId>aws-java-sdk-parent</artifactId>
-  <version>${revision}${changelist}</version>
+  <version>${revision}-${changelist}</version>
   <packaging>pom</packaging>
 
   <name>Amazon Web Services SDK :: Parent</name>
@@ -50,7 +50,7 @@
   </modules>
   <properties>
     <revision>1.12.81</revision>
-    <changelist>-SNAPSHOT</changelist>
+    <changelist>999999-SNAPSHOT</changelist>
     <java.level>8</java.level>
     <jackson.version>2.12.4</jackson.version>
     <jenkins.version>2.222.4</jenkins.version>
