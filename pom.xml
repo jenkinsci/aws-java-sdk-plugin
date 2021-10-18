@@ -52,8 +52,9 @@
     <revision>1.12.89</revision>
     <changelist>999999-SNAPSHOT</changelist>
     <java.level>8</java.level>
-    <jackson.version>2.12.4</jackson.version>
-    <jenkins.version>2.222.4</jenkins.version>
+    <jackson.version>2.13.0-230.v59243c64b0a5</jackson.version>
+    <bom>2.249.x</bom>
+    <jenkins.version>2.249.3</jenkins.version>
     <autoVersionSubmodules>true</autoVersionSubmodules>
   </properties>
   <repositories>
@@ -70,6 +71,13 @@
   </pluginRepositories>
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>io.jenkins.tools.bom</groupId>
+        <artifactId>bom-${bom}</artifactId>
+        <version>966.v3857b7c82032</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <dependency>
         <groupId>com.amazonaws</groupId>
         <artifactId>aws-java-sdk-bom</artifactId>
@@ -106,16 +114,6 @@
       <dependency>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>jackson2-api</artifactId>
-        <version>${jackson.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jenkins-ci.plugins</groupId>
-        <artifactId>apache-httpcomponents-client-4-api</artifactId>
-        <version>4.5.13-1.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.fasterxml.jackson.dataformat</groupId>
-        <artifactId>jackson-dataformat-cbor</artifactId>
         <version>${jackson.version}</version>
       </dependency>
     </dependencies>
