@@ -104,6 +104,10 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-cbor</artifactId>
+          </exclusion>
           <!-- use the version supplied by apache-httpcomponents-client-4-api -->
           <exclusion>
             <groupId>org.apache.httpcomponents</groupId>
