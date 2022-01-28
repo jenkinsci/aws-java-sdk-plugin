@@ -11,14 +11,6 @@
   <packaging>hpi</packaging>
 
   <name>Amazon Web Services SDK :: Minimal</name>
-  <description>
-    Contains minimal AWS SDK modules that must live in the same classloader:
-    * core
-    * jmespath
-    * kms
-    * s3
-    * sts
-  </description>
   <url>https://github.com/jenkinsci/aws-java-sdk-plugin</url>
   <dependencies>
     <dependency>
