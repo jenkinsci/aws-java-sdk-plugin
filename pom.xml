@@ -52,7 +52,7 @@
     <revision>1.12.163</revision>
     <changelist>999999-SNAPSHOT</changelist>
     <java.level>8</java.level>
-    <jackson.version>2.13.0-230.v59243c64b0a5</jackson.version>
+    <jackson.version>2.13.2.20220328-273.v11d70a_b_a_1a_52</jackson.version>
     <bom>2.249.x</bom>
     <jenkins.version>2.249.3</jenkins.version>
     <autoVersionSubmodules>true</autoVersionSubmodules>
