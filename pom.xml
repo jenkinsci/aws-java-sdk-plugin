@@ -49,7 +49,7 @@
     <module>aws-java-sdk-ssm</module>
   </modules>
   <properties>
-    <revision>1.12.163</revision>
+    <revision>1.12.200</revision>
     <changelist>999999-SNAPSHOT</changelist>
     <java.level>8</java.level>
     <jackson.version>2.13.0-230.v59243c64b0a5</jackson.version>
