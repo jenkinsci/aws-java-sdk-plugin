@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>4.37</version>
+    <version>4.40</version>
     <relativePath />
   </parent>
   <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
@@ -51,7 +51,6 @@
   <properties>
     <revision>1.12.201</revision>
     <changelist>999999-SNAPSHOT</changelist>
-    <java.level>8</java.level>
     <jackson.version>2.13.0-230.v59243c64b0a5</jackson.version>
     <bom>2.249.x</bom>
     <jenkins.version>2.249.3</jenkins.version>
