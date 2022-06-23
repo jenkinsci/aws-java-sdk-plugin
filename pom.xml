@@ -48,6 +48,7 @@
     <module>aws-java-sdk-minimal</module>
     <module>aws-java-sdk-sns</module>
     <module>aws-java-sdk-ssm</module>
+    <module>aws-java-sdk-sqs</module>
   </modules>
   <properties>
     <revision>1.12.215</revision>
