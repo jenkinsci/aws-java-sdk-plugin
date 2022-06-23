@@ -65,6 +65,11 @@
       <version>${project.version}</version>
     </dependency>
     <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-sqs</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-java-sdk</artifactId>
       <exclusions>
@@ -124,6 +129,10 @@
         <exclusion>
           <groupId>com.amazonaws</groupId>
           <artifactId>jmespath-java</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-sqs</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
