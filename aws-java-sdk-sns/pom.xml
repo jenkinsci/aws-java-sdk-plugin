@@ -19,12 +19,21 @@
       <version>${project.version}</version>
     </dependency>
     <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>aws-java-sdk-sqs</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-java-sdk-sns</artifactId>
       <exclusions>
         <exclusion>
           <groupId>com.amazonaws</groupId>
           <artifactId>aws-java-sdk-core</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-sqs</artifactId>
         </exclusion>
         <exclusion>
           <groupId>com.amazonaws</groupId>
