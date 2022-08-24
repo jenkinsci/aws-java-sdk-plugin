@@ -52,7 +52,7 @@
     <module>aws-java-sdk-sqs</module>
   </modules>
   <properties>
-    <revision>1.12.287</revision>
+    <revision>1.12.288</revision>
     <changelist>999999-SNAPSHOT</changelist>
     <jackson.version>2.13.0-230.v59243c64b0a5</jackson.version>
     <bom>2.249.x</bom>
