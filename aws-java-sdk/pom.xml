@@ -41,6 +41,11 @@
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-efs</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
       <artifactId>aws-java-sdk-elasticbeanstalk</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -102,6 +107,10 @@
         <exclusion>
           <groupId>com.amazonaws</groupId>
           <artifactId>aws-java-sdk-ecs</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-efs</artifactId>
         </exclusion>
         <exclusion>
           <groupId>com.amazonaws</groupId>
