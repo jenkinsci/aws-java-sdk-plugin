@@ -54,7 +54,7 @@
   <properties>
     <revision>1.12.287</revision>
     <changelist>999999-SNAPSHOT</changelist>
-    <jackson.version>2.13.0-230.v59243c64b0a5</jackson.version>
+    <jackson.version>2.14.1-313.v504cdd45c18b</jackson.version>
     <bom>2.249.x</bom>
     <jenkins.version>2.249.3</jenkins.version>
     <autoVersionSubmodules>true</autoVersionSubmodules>
