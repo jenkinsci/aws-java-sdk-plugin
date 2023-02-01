@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>4.47</version>
+    <version>4.54</version>
     <relativePath />
   </parent>
   <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
@@ -54,9 +54,9 @@
   <properties>
     <revision>1.12.287</revision>
     <changelist>999999-SNAPSHOT</changelist>
-    <jackson.version>2.13.0-230.v59243c64b0a5</jackson.version>
-    <bom>2.249.x</bom>
-    <jenkins.version>2.249.3</jenkins.version>
+    <jackson.version>2.14.2-319.v37853346a_229</jackson.version>
+    <bom>2.361.x</bom>
+    <jenkins.version>2.361.4</jenkins.version>
     <autoVersionSubmodules>true</autoVersionSubmodules>
   </properties>
   <repositories>
@@ -76,7 +76,7 @@
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
         <artifactId>bom-${bom}</artifactId>
-        <version>966.v3857b7c82032</version>
+        <version>1798.vc671fe94856f</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
