@@ -29,10 +29,10 @@
       <email>vincent@latombe.net</email>
     </developer>
   </developers>
-  <scm>
-    <connection>scm:git:git://github.com/jenkinsci/aws-java-sdk-plugin.git</connection>
+  <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
+    <connection>scm:git:https://github.com/jenkinsci/aws-java-sdk-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/aws-java-sdk-plugin.git</developerConnection>
-    <url>https://github.com/jenkinsci/aws-java-sdk-plugin</url>
+    <url>https://github.com/jenkinsci/aws-java-sdk-plugin/</url>
     <tag>${scmTag}</tag>
   </scm>
   <modules>
