@@ -59,6 +59,7 @@
     <bom>2.361.x</bom>
     <jenkins.version>2.361.4</jenkins.version>
     <autoVersionSubmodules>true</autoVersionSubmodules>
+    <hpi-plugin.version>3.42</hpi-plugin.version>
   </properties>
   <repositories>
     <repository>
