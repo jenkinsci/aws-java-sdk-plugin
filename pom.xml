@@ -48,6 +48,7 @@
     <module>aws-java-sdk-kinesis</module>
     <module>aws-java-sdk-logs</module>
     <module>aws-java-sdk-minimal</module>
+    <module>aws-java-sdk-secretsmanager</module>
     <module>aws-java-sdk-sns</module>
     <module>aws-java-sdk-ssm</module>
     <module>aws-java-sdk-sqs</module>
