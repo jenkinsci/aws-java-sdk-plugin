@@ -29,7 +29,8 @@ public class Base64Test {
         }
     }
 
-    @Rule public RealJenkinsRule rr = new RealJenkinsRule();
+    @Rule
+    public RealJenkinsRule rr = new RealJenkinsRule();
 
     @Test
     public void smokes() throws Throwable {

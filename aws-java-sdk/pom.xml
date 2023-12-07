@@ -7,88 +7,14 @@
     <artifactId>aws-java-sdk-parent</artifactId>
     <version>${revision}-${changelist}</version>
   </parent>
-  <groupId>org.jenkins-ci.plugins</groupId><!-- backward compatibility -->
+  <!-- backward compatibility -->
+  <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>aws-java-sdk</artifactId>
   <packaging>hpi</packaging>
 
   <name>Amazon Web Services SDK :: All</name>
   <url>https://github.com/jenkinsci/aws-java-sdk-plugin</url>
   <dependencies>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-cloudformation</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-codebuild</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-ec2</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-ecr</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-ecs</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-efs</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-elasticbeanstalk</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-iam</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-kinesis</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-logs</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-minimal</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-secretsmanager</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-sns</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-sqs</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
-      <artifactId>aws-java-sdk-ssm</artifactId>
-      <version>${project.version}</version>
-    </dependency>
     <dependency>
       <groupId>com.amazonaws</groupId>
       <artifactId>aws-java-sdk</artifactId>
@@ -171,6 +97,81 @@
           <artifactId>jmespath-java</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-cloudformation</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-codebuild</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-ec2</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-ecr</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-ecs</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-efs</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-elasticbeanstalk</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-iam</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-kinesis</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-logs</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-minimal</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-secretsmanager</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-sns</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-sqs</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-ssm</artifactId>
+      <version>${project.version}</version>
     </dependency>
   </dependencies>
 </project>
