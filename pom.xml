@@ -29,12 +29,6 @@
       <email>vincent@latombe.net</email>
     </developer>
   </developers>
-  <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
-    <connection>scm:git:https://github.com/jenkinsci/aws-java-sdk-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/aws-java-sdk-plugin.git</developerConnection>
-    <url>https://github.com/jenkinsci/aws-java-sdk-plugin/</url>
-    <tag>${scmTag}</tag>
-  </scm>
   <modules>
     <module>aws-java-sdk</module>
     <module>aws-java-sdk-cloudformation</module>
@@ -53,6 +47,12 @@
     <module>aws-java-sdk-ssm</module>
     <module>aws-java-sdk-sqs</module>
   </modules>
+  <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
+    <connection>scm:git:https://github.com/jenkinsci/aws-java-sdk-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/aws-java-sdk-plugin.git</developerConnection>
+    <tag>${scmTag}</tag>
+    <url>https://github.com/jenkinsci/aws-java-sdk-plugin/</url>
+  </scm>
   <properties>
     <revision>1.12.606</revision>
     <changelist>999999-SNAPSHOT</changelist>
@@ -60,21 +60,17 @@
     <bom>2.361.x</bom>
     <jenkins.version>2.361.4</jenkins.version>
     <autoVersionSubmodules>true</autoVersionSubmodules>
+    <spotless.check.skip>false</spotless.check.skip>
   </properties>
-  <repositories>
-    <repository>
-      <id>repo.jenkins-ci.org</id>
-      <url>https://repo.jenkins-ci.org/public/</url>
-    </repository>
-  </repositories>
-  <pluginRepositories>
-    <pluginRepository>
-      <id>repo.jenkins-ci.org</id>
-      <url>https://repo.jenkins-ci.org/public/</url>
-    </pluginRepository>
-  </pluginRepositories>
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>com.amazonaws</groupId>
+        <artifactId>aws-java-sdk-bom</artifactId>
+        <version>${revision}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
         <artifactId>bom-${bom}</artifactId>
@@ -84,20 +80,12 @@
       </dependency>
       <dependency>
         <groupId>com.amazonaws</groupId>
-        <artifactId>aws-java-sdk-bom</artifactId>
-        <version>${revision}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>com.amazonaws</groupId>
         <artifactId>aws-java-sdk</artifactId>
         <version>${revision}</version>
         <exclusions>
           <exclusion>
-            <!-- Included in core -->
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
           </exclusion>
           <!-- use the version supplied by jackson2-api -->
           <exclusion>
@@ -105,12 +93,13 @@
             <artifactId>jackson-databind</artifactId>
           </exclusion>
           <exclusion>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-          </exclusion>
-          <exclusion>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-cbor</artifactId>
+          </exclusion>
+          <exclusion>
+            <!-- Included in core -->
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
           </exclusion>
           <!-- use the version supplied by apache-httpcomponents-client-4-api -->
           <exclusion>
@@ -126,4 +115,16 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+  <repositories>
+    <repository>
+      <id>repo.jenkins-ci.org</id>
+      <url>https://repo.jenkins-ci.org/public/</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>repo.jenkins-ci.org</id>
+      <url>https://repo.jenkins-ci.org/public/</url>
+    </pluginRepository>
+  </pluginRepositories>
 </project>
