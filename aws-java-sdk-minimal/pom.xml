@@ -35,6 +35,11 @@
           <groupId>commons-codec</groupId>
           <artifactId>commons-codec</artifactId>
         </exclusion>
+        <!-- use the version supplied by joda-time-api -->
+        <exclusion>
+          <groupId>joda-time</groupId>
+          <artifactId>joda-time</artifactId>
+        </exclusion>
         <!-- use the version supplied by apache-httpcomponents-client-4-api -->
         <exclusion>
           <groupId>org.apache.httpcomponents</groupId>
@@ -55,6 +60,10 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>jaxb</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.jenkins.plugins</groupId>
+      <artifactId>joda-time-api</artifactId>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
