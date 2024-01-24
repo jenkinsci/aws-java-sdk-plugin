@@ -8,6 +8,19 @@ This plugin provides the [AWS SDK for Java](https://aws.amazon.com/sdk-for-java/
 
 Commonly used modules have their own plugins, less used modules are in the `aws-java-sdk` plugin.
 
+## Requesting new instance types
+
+Some plugins, such as the [ec2-plugin](https://github.com/jenkinsci/ec2-plugin) rely on the AWS SDK to list available instance types. Updates of the AWS SDK come via this plugin.
+
+There is a new release of the AWS SDK every day, and most updates are not relevant to most Jenkins users. 
+
+As the current maintainer of this library plugin, I am not actively monitoring the [AWS SDK changelog](https://github.com/aws/aws-sdk-java/blob/master/CHANGELOG.md).
+
+If you want to use a new instance type and it is not yet available through this plugin:
+* look up in what version of the AWS SDK it has been introduced ([changelog](https://github.com/aws/aws-sdk-java/blob/master/CHANGELOG.md))
+* find the latest dependabot pull request bumping the AWS SDK ([link](https://github.com/jenkinsci/aws-java-sdk-plugin/pulls?q=is:pr+is:open+sort:updated-desc+revision))
+* ask for a merge and release after providing the instance type you are looking for, and the version of the AWS SDK it has been introduced in.
+
 ## Plugins
 ### aws-java-sdk-minimal
 This plugins contains multiple modules.
