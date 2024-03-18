@@ -54,7 +54,7 @@
     <url>https://github.com/jenkinsci/aws-java-sdk-plugin/</url>
   </scm>
   <properties>
-    <revision>1.12.671</revision>
+    <revision>1.12.681</revision>
     <changelist>999999-SNAPSHOT</changelist>
     <jackson.version>2.16.2-378.v7e79818f53ce</jackson.version>
     <bom>2.401.x</bom>
