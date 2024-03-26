@@ -63,7 +63,6 @@
   <properties>
     <revision>1.12.671</revision>
     <changelist>999999-SNAPSHOT</changelist>
-    <jackson.version>2.16.2-378.v7e79818f53ce</jackson.version>
     <bom>2.401.x</bom>
     <jenkins.version>2.401.3</jenkins.version>
     <autoVersionSubmodules>true</autoVersionSubmodules>
@@ -114,11 +113,6 @@
             <artifactId>httpclient</artifactId>
           </exclusion>
         </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.jenkins-ci.plugins</groupId>
-        <artifactId>jackson2-api</artifactId>
-        <version>${jackson.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
