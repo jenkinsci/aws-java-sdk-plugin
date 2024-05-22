@@ -10,7 +10,7 @@
   <artifactId>aws-java-sdk-api-gateway</artifactId>
   <packaging>hpi</packaging>
 
-  <name>Amazon Web Services SDK :: Api Gateway</name>
+  <name>Amazon Web Services SDK :: API Gateway</name>
   <url>https://github.com/jenkinsci/aws-java-sdk-plugin</url>
   <dependencies>
     <dependency>

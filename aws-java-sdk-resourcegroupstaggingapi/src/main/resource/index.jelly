@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+    Resource Groups Tagging API module for the <a href="https://aws.amazon.com/sdk-for-java/">AWS SDK for Java</a>.
+</div>

@@ -7,10 +7,10 @@
     <artifactId>aws-java-sdk-parent</artifactId>
     <version>${revision}-${changelist}</version>
   </parent>
-  <artifactId>aws-java-sdk-kinesis</artifactId>
+  <artifactId>aws-java-sdk-eks</artifactId>
   <packaging>hpi</packaging>
 
-  <name>Amazon Web Services SDK :: Kinesis</name>
+  <name>Amazon Web Services SDK :: EKS</name>
   <url>https://github.com/jenkinsci/aws-java-sdk-plugin</url>
   <dependencies>
     <dependency>
@@ -20,7 +20,7 @@
     </dependency>
     <dependency>
       <groupId>com.amazonaws</groupId>
-      <artifactId>aws-java-sdk-kinesis</artifactId>
+      <artifactId>aws-java-sdk-eks</artifactId>
       <exclusions>
         <exclusion>
           <groupId>com.amazonaws</groupId>
