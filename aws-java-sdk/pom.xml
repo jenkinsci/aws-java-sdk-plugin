@@ -38,6 +38,10 @@
         </exclusion>
         <exclusion>
           <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-cloudwatch</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
           <artifactId>aws-java-sdk-codebuild</artifactId>
         </exclusion>
         <exclusion>
@@ -63,6 +67,10 @@
         <exclusion>
           <groupId>com.amazonaws</groupId>
           <artifactId>aws-java-sdk-efs</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-eks</artifactId>
         </exclusion>
         <exclusion>
           <groupId>com.amazonaws</groupId>
@@ -95,6 +103,14 @@
         <exclusion>
           <groupId>com.amazonaws</groupId>
           <artifactId>aws-java-sdk-organizations</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-rds</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>com.amazonaws</groupId>
+          <artifactId>aws-java-sdk-resourcegroupstaggingapi</artifactId>
         </exclusion>
         <exclusion>
           <groupId>com.amazonaws</groupId>
@@ -148,6 +164,11 @@
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-cloudwatch</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
       <artifactId>aws-java-sdk-codebuild</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -174,6 +195,11 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
       <artifactId>aws-java-sdk-efs</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-eks</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
@@ -214,6 +240,16 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
       <artifactId>aws-java-sdk-organizations</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-rds</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
+      <artifactId>aws-java-sdk-resourcegroupstaggingapi</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

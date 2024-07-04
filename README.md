@@ -23,7 +23,7 @@ If you want to use a new instance type and it is not yet available through this 
 
 ## Plugins
 ### aws-java-sdk-minimal
-This plugins contains multiple modules.
+This plugin contains multiple modules.
 These have been grouped together as `aws-java-sdk-core` needs some classes in the same classpath and the structured classloaders in Jenkins don't permit having them in different plugins. 
 
 * aws-java-sdk-core
@@ -46,6 +46,6 @@ If you need to use an API that is not yet published as its own plugin, feel free
 * Create `pom.xml`.
   * Depend on `com.amazonaws:aws-java-sdk-<name>`. Exclude all transitive dependencies.
   * Transitive dependencies should be replaced by their equivalent plugin dependency. Most APIs only depend on `aws-java-sdk-core` and `jmespath-java` (both are part of the `aws-java-sdk-minimal` plugin).
-* Create `src/main/resource/index.jelly`. Look at existing modules and adapt it.
+* Create `src/main/resources/index.jelly`. Look at existing modules and adapt it.
 * Add the module to the root `pom.xml`.
 * Add the plugin dependency to `aws-java-sdk` and exclude the module from transitive dependencies.

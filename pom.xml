@@ -35,12 +35,14 @@
     <module>aws-java-sdk-autoscaling</module>
     <module>aws-java-sdk-cloudformation</module>
     <module>aws-java-sdk-cloudfront</module>
+    <module>aws-java-sdk-cloudwatch</module>
     <module>aws-java-sdk-codebuild</module>
     <module>aws-java-sdk-codedeploy</module>
     <module>aws-java-sdk-ec2</module>
     <module>aws-java-sdk-ecr</module>
     <module>aws-java-sdk-ecs</module>
     <module>aws-java-sdk-efs</module>
+    <module>aws-java-sdk-eks</module>
     <module>aws-java-sdk-elasticbeanstalk</module>
     <module>aws-java-sdk-elasticloadbalancingv2</module>
     <module>aws-java-sdk-iam</module>
@@ -49,10 +51,12 @@
     <module>aws-java-sdk-logs</module>
     <module>aws-java-sdk-minimal</module>
     <module>aws-java-sdk-organizations</module>
+    <module>aws-java-sdk-rds</module>
+    <module>aws-java-sdk-resourcegroupstaggingapi</module>
     <module>aws-java-sdk-secretsmanager</module>
     <module>aws-java-sdk-sns</module>
-    <module>aws-java-sdk-ssm</module>
     <module>aws-java-sdk-sqs</module>
+    <module>aws-java-sdk-ssm</module>
   </modules>
   <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
     <connection>scm:git:https://github.com/jenkinsci/aws-java-sdk-plugin.git</connection>
