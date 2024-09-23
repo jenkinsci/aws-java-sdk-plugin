@@ -63,8 +63,8 @@
   <properties>
     <revision>1.12.772</revision>
     <changelist>999999-SNAPSHOT</changelist>
-    <bom>2.401.x</bom>
-    <jenkins.version>2.401.3</jenkins.version>
+    <bom>2.440.x</bom>
+    <jenkins.version>2.440.3</jenkins.version>
     <autoVersionSubmodules>true</autoVersionSubmodules>
     <spotless.check.skip>false</spotless.check.skip>
   </properties>
@@ -80,7 +80,7 @@
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
         <artifactId>bom-${bom}</artifactId>
-        <version>2745.vc7b_fe4c876fa_</version>
+        <version>3387.v0f2773fa_3200</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
