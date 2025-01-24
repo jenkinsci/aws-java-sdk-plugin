@@ -35,6 +35,7 @@
     <module>aws-java-sdk-autoscaling</module>
     <module>aws-java-sdk-cloudformation</module>
     <module>aws-java-sdk-cloudfront</module>
+    <module>aws-java-sdk-cloudwatch</module>
     <module>aws-java-sdk-codebuild</module>
     <module>aws-java-sdk-codedeploy</module>
     <module>aws-java-sdk-ec2</module>
