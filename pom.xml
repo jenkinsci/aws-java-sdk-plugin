@@ -62,7 +62,7 @@
     <url>https://github.com/jenkinsci/aws-java-sdk-plugin/</url>
   </scm>
   <properties>
-    <revision>1.12.772</revision>
+    <revision>1.12.780</revision>
     <changelist>999999-SNAPSHOT</changelist>
     <bom>${jenkins.baseline}.x</bom>
     <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
