@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>4.88</version>
+    <version>5.9</version>
     <relativePath />
   </parent>
   <groupId>org.jenkins-ci.plugins.aws-java-sdk</groupId>
@@ -66,7 +66,7 @@
     <changelist>999999-SNAPSHOT</changelist>
     <bom>${jenkins.baseline}.x</bom>
     <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
-    <jenkins.baseline>2.440</jenkins.baseline>
+    <jenkins.baseline>2.479</jenkins.baseline>
     <jenkins.version>${jenkins.baseline}.3</jenkins.version>
     <autoVersionSubmodules>true</autoVersionSubmodules>
     <spotless.check.skip>false</spotless.check.skip>
@@ -83,7 +83,7 @@
       <dependency>
         <groupId>io.jenkins.tools.bom</groupId>
         <artifactId>bom-${bom}</artifactId>
-        <version>3387.v0f2773fa_3200</version>
+        <version>4440.v39a_9eb_b_c6b_4d</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
